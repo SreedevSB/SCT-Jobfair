@@ -7,6 +7,11 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+div:after{
+  display: block;
+  clear: both;
+  content:" ";
+}
 .text-muted {
   color: #777777;
 }
@@ -333,13 +338,27 @@ section h3.section-subheading {
 }
 .service-heading {
   font-size:16px;
-  font-weight:400;
+  font-weight:900;
   margin: 15px 0;
   text-transform: none;
 }
 #portfolio .portfolio-item {
-  margin: 0 0 15px;
+  position: relative;
+  height:200px;
+  margin: 0 0 0px;
   right: 0;
+}
+#portfolio .portfolio-item img{
+  max-height: 100%;  
+  max-width: 80%; 
+  width: auto;
+  height: auto;
+  position: absolute;  
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
@@ -399,7 +418,7 @@ section h3.section-subheading {
 }
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
-    margin: 0 0 30px;
+    margin: 0 0 10px;
   }
 }
 .timeline {
