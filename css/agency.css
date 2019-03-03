@@ -360,6 +360,13 @@ section h3.section-subheading {
   right: 0;  
   margin: auto;
 }
+
+@media (max-width:768px){
+  #portfolio .portfolio-item img {
+    max-width:50%;
+  }
+  }
+
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
