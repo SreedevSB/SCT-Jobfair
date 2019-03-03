@@ -652,6 +652,7 @@ body {
 @media (max-width:768px){
 #about p{
   font-size: 0.8em;
+  padding:0px 20px;
 }
 }
 .tagline{
