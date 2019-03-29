@@ -664,6 +664,9 @@ ul.social-buttons li a:active {
   opacity: 0;
   display: none;
 }
+.portfolio-modal a.btn{
+  display: none;
+}
 ::-moz-selection {
   text-shadow: none;
   background: #fed136;
